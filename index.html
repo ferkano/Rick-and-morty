@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <link rel="icon" href="./assets/portal6.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;family=Source+Sans+Pro:wght@200;400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="./sass/table.css" media="(min-width: 430px)">
+    <link rel="stylesheet" href="./sass/desktop.css" media="(min-width: 700px)">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo"><img src="./assets/portal5.png" alt="logo-rick-morty" srcset=""></div>
+      <nav class="header__nav">
+        <input id="search" type="search" placeholder="Search character">
+      </nav>
+    </header>
+    <div class="filter">       
+      <label for="select-primary">Filter by</label>
+      <select id="select-primary" name="primary"></select>
+      <label for="select-secondary"></label>
+      <select id="select-secondary" name="secondary"></select>
+    </div>
+    <article class="principal"> 
+      <section class="grid grid-fluid" id="characters"></section>
+      <template class="template" id="template">
+        <div class="card"><img src="" alt="" srcset="">
+          <div class="details-cards">
+            <h3 class="name"></h3>
+            <h4 class="specie">Species: 
+              <p class="date date-specie"></p>
+            </h4>
+            <button class="details-cards--watch-details" id="watch-details"><a class="a-details" href="#">Ver detalles</a></button>
+          </div>
+        </div>
+      </template>
+      <div class="links"> <a class="link--prev" href=""> </a><a class="link--next" href=""> </a></div>
+    </article>
+    <article class="details">
+      <section class="details-character" id="details-character"> </section>
+      <template class="template-details" id="template-details">      
+        <div class="close"> <a href="#"><span class="left"><span class="circle-left"></span><span class="circle-right"> </span></span><span class="right"> <span class="circle-left"> </span><span class="circle-right"></span></span></a></div>
+        <div class="details-character__card-details"><img src="" alt="" srcset="">
+          <div class="details-character__card-details__data-details">
+            <h2 class="details-character__card-details__data-details--name-details"></h2>
+            <div class="details-character__card-details__data-details__data">
+              <div class="details-character__card-details__data-details__data__status"><b>Status:</b>
+                <p class="details-character__card-details__data-details__data__status--status"></p>
+              </div>
+              <div class="details-character__card-details__data-details__data__specie"><b>Specie:</b>
+                <p class="details-character__card-details__data-details__data__specie--specie"></p>
+              </div>
+              <div class="details-character__card-details__data-details__data__gender"> <b>Gender:</b>
+                <p class="details-character__card-details__data-details__data__gender--gender"></p>
+              </div>
+              <div class="details-character__card-details__data-details__data__origin"> <b>Origin: </b>
+                <p class="details-character__card-details__data-details__data__origin--origin"></p>
+              </div>
+              <div class="details-character__card-details__data-details__data__location"><b>Location: </b>
+                <p class="details-character__card-details__data-details__data__location--location"> </p>
+              </div>
+              <div class="details-character__card-details__data-details__data__created"> <b>Created: </b>
+                <p class="details-character__card-details__data-details__data__created--created"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </article>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"> </script>
+    <script src="index.js"> </script>
+  </body>
+</html>

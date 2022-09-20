@@ -1,0 +1,9 @@
+body .details-character__card-details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  height: 48rem;
+  padding: 0;
+}
