@@ -4,7 +4,7 @@
 
 ##### Se usaron las siguientes tecnoligias:
 
-- Html.
+- Pug.
 - Sass.
 - Flexbox and Grid.
 - Responsve design.
